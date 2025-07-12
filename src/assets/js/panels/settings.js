@@ -233,9 +233,6 @@ class Settings {
         document.querySelector('.carlitos-2k').addEventListener('click', () => {
             require('electron').shell.openExternal("https://x.com/Carlitoss_sg")
         });
-        document.querySelector('.smartimation__content').addEventListener('click', () => {
-            require('electron').shell.openExternal("https://x.com/ElBenjas333")
-        });
     }
 
     async resolution() {
