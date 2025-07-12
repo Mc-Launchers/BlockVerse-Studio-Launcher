@@ -166,7 +166,7 @@ const setupAutoUpdater = () => {
     autoUpdater.setFeedURL({
         provider: 'github',
         owner: 'Mc-Launchers',
-        repo: 'BlockVerse Studio-client',
+        repo: 'BlockVerse Studio-Launcher',
         token: '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',
         releaseType: 'release',
     });
