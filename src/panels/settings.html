@@ -1,0 +1,158 @@
+<div class="container">
+    <div class="nav-settings">
+        <p>Ajustes</p>
+        <div class="nav-box">
+            <div id="account" class="nav-settings-btn active-settings-BTN2">Cuenta</div>
+            <div id="java" class="nav-settings-btn">Recursos</div>
+            <div id="launcher" class="nav-settings-btn">Launcher</div>
+            <div id="terms" class="nav-settings-elfo">Términos</div>
+            <div id="save" class="nav-settings-btn">Guardar y volver al menú</div>
+        </div>
+    </div>
+
+    <div id="account-tab" class="container-settings active-container-settings">
+        <div class="titre-tab">Cuenta Actual</div>
+        <div class="accounts-list content-scroll">
+            <div class="accouant" id="aadd">
+                <div class="add-profiale">
+                    <div class="icon-acacount-add"></div>
+                </div>
+                <div class="add-text-profile">Añadir</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="java-tab" class="container-settings content-scroll">
+        <div class="titre-tab">Uso de RAM</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Definición de la RAM asignada a tu juego, una cantidad mayor aumentará el rendimiento de tu juego.<br>
+                Tenga en cuenta que debe evitar agregar una cantidad demasiado grande, de lo contrario esto podría causar la pérdida de rendimiento en sus otras aplicaciones.<br><br>
+                <b>-RAM Máxima:</b> Muestra la cantidad total de RAM asignada a tu juego. No se recomienda exceder el 50% de la cantidad total de RAM presente en su PC.<br><br>
+                <b>-RAM Mínima:</b> Indica la cantidad mínima de RAM asignada al iniciar tu juego. Se recomienda no poner más de 4GB para este valor.
+            </div>
+            <div class="settings-elements content-evenly">
+                <div class="memory-slider" min="0.5" max="8" step="0.5">
+                    <div class="slider-touch-left">
+                        <span value="0 Go"></span>
+                    </div>
+                    <div class="slider-touch-right">
+                        <span value="0 Go"></span>
+                    </div>
+                    <div class="slider-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ram-info-block">
+                    <b>Tienes <span id="total-ram">0 Go</span> de RAM.</b><br>
+                    <b>Tienes un total de <span id="free-ram">0 Go</span> RAM disponible.</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="titre-tab">Descarga</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Esta configuración determina la cantidad máxima de archivos que se pueden descargar simultáneamente durante la actualización o descarga de recursos.<br><br>
+                Tenga en cuenta que cambiar esta configuración puede afectar el rendimiento de descarga.<br>
+                Se recomienda no exceder los límites recomendados predeterminados,<br>
+                a menos que tenga problemas de conectividad específicos.
+            </div>
+            <div class="settings-elements content-center">
+                <input type="number" class="max-files input-max-files">
+                <p>Archivos</p>
+                <div class="max-files-reset max-files-btn">Por defecto</div>
+            </div>
+        </div>
+
+        <div class="titre-tab">Java</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                El Launcher utiliza una versión integrada de Java.<br>
+                Esta versión está disponible en el directorio principal.<br><span class="java-path-txt"></span><br>
+                Sin embargo, puedes especificar tu propio ejecutable si tu juego requiere una versión superior de Java.
+            </div>
+            <div class="settings-elements content-evenly">
+                <input type="text" class="java-path-input-text" disabled>
+                <input type="file" class="java-path-input-file" accept="application/octet-stream" />
+                <div class="java-path-box">
+                    <div class="java-path-set java-path-btn">Cambiar</div>
+                    <div class="java-path-reset java-path-btn">Utilizar el Integrado</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-tab" class="container-settings">
+        <div class="titre-tab">Términos y Servicios</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Términos de Uso de la Aplicación de <span style="color: #00eeff;"><b>BlockVerse Studio Client</b></span><br><br>
+                1. Restricción de Distribución de Contenido:<br><br>
+                Queda estrictamente prohibida la distribución, reproducción o compartición de los recursos descargados a través de la Aplicación. Esto engloba, sin limitarse a ello, imágenes, archivos multimedia y documentos obtenidos mediante la Aplicación. Estos recursos son propiedad exclusiva de <span style="color: cyan;"><b>BlockVerse Studio Client</b></span> y su equipo o de los titulares de los derechos correspondientes, y solo pueden emplearse para fines personales en el ámbito de la Aplicación.<br><br>
+                2. Modificaciones en la Aplicación:<br><br>
+                No está permitido llevar a cabo modificaciones, alteraciones, descompilaciones o ingeniería inversa de la Aplicación. Esto incluye cualquier intento de modificar su funcionalidad, interfaz o estructura. La Aplicación se proporciona en su forma original, y cualquier alteración no autorizada podría conllevar la violación de los derechos de propiedad intelectual, resultando en la revocación inmediata de tus derechos de uso.<br>
+                <span style="color: cyan;"><b>Creadores del Launcher</b></span>
+            </div>
+            <div class="settings-elements content-center">
+                <div class="carlitos-2k size-btn">Carlitos_sg (X)</div>
+                <div class="button-renderer">
+                    <div class="smartimation smartimation--active-border smartimation--mask">
+                        <div class="smartimation__border">
+                            <div class="smartimation__border-visibility">
+                                <div class="chromatic-circle"></div>
+                            </div>
+                        </div>
+                        <div class="smartimation__content">
+                            <div class="button-shape">
+                                Benjas333 (X)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="launcher-tab" class="container-settings content-scroll">
+        <div class="titre-terms">Configuración de resolución de Minecraft</div>
+        <div class="terms">
+            <div class="setting-text">
+                Establece una resolución personalizada para tener un juego adaptado a tu pantalla.<br>
+                Por defecto, el juego inicia en 1280 X 720,<br>puedes modificar este valor para una comodidad de juego óptima. La resolución ideal es de 1920 X 1080.
+            </div>
+            <div class="settings-elements content-center">
+                <div class="input-size-element">
+                    <input type="number" class="width-size input-resolution">
+                    <div class="size-cross"></div>
+                    <input type="number" class="height-size input-resolution">
+                </div>
+                <div class="size-reset size-btn-res">Predeterminado</div>
+            </div>
+        </div>
+        
+        <div class="titre-tab">Comportamiento del Launcher</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Puedes elegir si el launcher se cierra automáticamente o permanece abierto cuando inicias el juego.
+            </div>
+            <div class="settings-elements content-evenly close-box">
+                <div class="close-launcher close-btn">Cerrar el launcher al iniciar MC</div>
+                <div class="close-none close-btn">Mantener el launcher abierto</div>
+            </div>
+        </div>
+
+        <div class="notitre-tab">Tema del Launcher</div>
+        <div class="nosettings-elements-box">
+            <div class="nosetting-text">
+                Actualmente contamos con el tema oscuro del launcher.<br><br>
+                Tenemos pensado añadir temas al launcher para gusto del usuario.<br>
+                Selecciona el que más te convenga según tus preferencias.
+            </div>
+            <div class="nosettings-elements content-center theme-box">
+                <div class="theme-btn theme-btn-sombre">Oscuro</div>
+                <div class="theme-btn theme-btn-auto">Automático</div>
+            </div>
+        </div>
+    </div>
+</div>

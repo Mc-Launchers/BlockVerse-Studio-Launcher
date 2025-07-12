@@ -1,0 +1,733 @@
+.settings .container {
+    display: flex;
+    height: 100%;
+    background-color: #00000048;
+    background-position: center;
+    background-size: contain;
+    backdrop-filter: blur(8px);
+}
+
+.nav-settings {
+    width: 20%;
+    height: 100%;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-settings p {
+    font-size: 60%;
+    margin-top: 80px;
+}
+
+.nav-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-box #save {
+    border: solid 4px var(--background-element2);
+    margin: 3rem;
+    transition: border-color 0.3s, transform 0.3s;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.nav-settings-btn {
+    font-size: 50%;
+    border: solid 4px var(--element-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.nav-settings-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.nav-settings-elfo {
+    font-size: 50%;
+    border: solid 4px var(--element-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    color: #000000;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(78, 78, 78) 100%);
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.nav-settings-elfo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.596); 
+    letter-spacing: 1px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.active-settings-BTN {
+    background: var(--element-color);
+}
+.active-settings-BTN2 {
+    transition: background-color 0.3s;
+}
+
+.container-settings {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    width: 80%;
+    height: calc(100% - 26px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.settings-elements-box {
+    background: #00000000;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.terms {
+    background: #00000000;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.nocontainer-settings {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    width: 80%;
+    height: calc(100% - 26px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+}
+
+.nosettings-elements-box {
+    background: #00000000;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: none;
+}
+
+.setting-text {
+    font-size: 0.8rem;
+}
+
+.active-container-settings {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: all;
+}
+
+.title-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    background: var(--background-transparent);
+    color: var(--color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.settings-elements {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.content-center,
+.content-evenly {
+    justify-content: center;
+}
+
+.accounts-list {
+    max-height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.account {
+    background: var(--background-element);
+    border: solid 4px var(--background-element);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(400px - 8px);
+    height: calc(100px - 8px);
+    margin: 1rem;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.account-select {
+    border: solid 4px var(--element-color);
+    transition: border-color 0.3s;
+}
+
+.accounts-list #add {
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-profile {
+    display: none;
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+
+.add-text-profile {
+    font-size: 1.5rem;
+    display: none;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    background: url(../../images/default/setve.png);
+    background-size: cover;
+    border-radius: 15px;
+    pointer-events: none;
+    image-rendering: pixelated;
+    transition: transform 0.3s;
+}
+
+.profile-infos {
+    text-align: center;
+    width: 10rem;
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+
+.profile-pseudo,
+.profile-uuid {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+
+.delete-profile {
+    width: 70px;
+    height: 70px;
+    background: var(--background-transparent);
+    border-radius: 15px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff2c2c;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.delete-profile-icon {
+    pointer-events: none;
+}
+
+.memory-slider {
+    position: relative;
+    margin: 0 1.5rem 0 0;
+    height: 18px;
+    width: 50%;
+    user-select: none;
+}
+
+.slider-touch-left,
+.slider-touch-right {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    z-index: 2;
+    transition: transform 0.3s;
+}
+
+.slider-touch-left span,
+.slider-touch-right span {
+    display: block;
+    width: 20px;
+    height: 10px;
+    background: #bbb;
+    border: 4px solid var(--element-color);
+    transition: background-color 0.2s, border-color 0.2s;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.slider-touch-left span:after,
+.slider-touch-right span:after {
+    content: attr(value);
+    color: var(--element-color);
+    font: normal normal bold 12px/18px Poppins;
+    white-space: nowrap;
+    pointer-events: none;
+    position: absolute;
+    top: -20px;
+    left: 83%;
+    transform: translate(-50%);
+}
+
+.slider-line {
+    box-sizing: border-box;
+    position: absolute;
+    width: calc(100% - 18px);
+    left: 9px;
+    top: 7px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #050505;
+    transition: background-color 0.2s;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.slider-line span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: var(--element-color);
+    transition: background-color 0.2s;
+}
+
+.ram-info-block {
+    font-size: 0.9rem;
+    color: var(--color);
+    transition: color 0.3s;
+}
+
+.java-path-input-text {
+    background: var(--shadow);
+    border: none;
+    color: var(--color);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    width: 50%;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.java-path-input-file {
+    display: none;
+}
+
+.java-path-box {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.java-path-btn {
+    padding: 0.3rem 1rem;
+    background: var(--element-color);
+    border-radius: 15px;
+    margin: 0 1rem;
+    cursor: pointer;
+    color: #000000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.input-size-element {
+    display: flex;
+    align-items: center;
+}
+
+.input-resolution {
+    background: var(--shadow);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 6rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.size-cross {
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.size-cross:before {
+    font: normal normal bold 20px Icons;
+    content: "\e90e";
+    transition: color 0.3s;
+}
+
+.size-btn {
+    padding: 0.3rem 1rem;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(102, 102, 102) 100%);
+    border-radius: 15px;
+    color: black;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.size-btn:hover {
+    box-shadow: 0 0 10px 0 #00eeff inset, 0 0 10px 4px #a0f9ff;
+}
+
+.size-btn-res {
+    padding: 0.3rem 1rem;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(92, 92, 92) 100%);
+    border-radius: 15px;
+    color: black;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.size-btn-res:hover {
+    box-shadow: 0 0 10px 0 #abffff inset, 0 0 10px 4px #000000;
+}
+
+/* https://cdn.discordapp.com/emojis/1243116046077132932.webp */
+.button-shape {
+    position: relative;
+    margin: 0;
+    white-space: nowrap;
+    border: none;
+    outline-width: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-flex: 1;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 0.3rem 1rem;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(102, 102, 102) 100%);
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+  
+.button-shape:hover {
+    border-color: transparent;
+}
+
+.smartimation__content {
+    display: block;
+}
+
+.smartimation {
+    position: relative;
+    display: block;
+}
+
+.smartimation .smartimation__content {
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.smartimation__border {
+    z-index: 1;
+    border-radius: 15px;
+    position: absolute;
+    overflow: hidden;
+    top: -3px;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+}
+
+.smartimation__border-visibility {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.smartimation--active-border:hover .smartimation__border-visibility {
+    opacity: 1;
+}
+
+.smartimation--mask .smartimation__border {
+    padding: 3px;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.smartimation--mask .smartimation__border-visibility {
+    width: calc(100% + 12px);
+    transform: translate(-3px, -3px);
+}
+
+.smartimation--mask .smartimation__content {
+    background: transparent;
+}
+
+.button-renderer {
+    display: flexbox;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-direction: row;
+    margin: 0 1rem;
+}
+
+.chromatic-circle {
+    position: relative;
+    width: calc(146.83px + 6px);
+    height: calc(34.59px + 6px);
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.chromatic-circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(146.83px + 10px);
+    height: calc(146.83px + 10px);
+    background: 
+        linear-gradient(60deg, rgba(255,255,0,.8), rgba(255,255,0,0) 60%),
+        linear-gradient(120deg, rgba(0,255,0,.8), rgba(0,255,0,0) 60%),
+        linear-gradient(180deg, rgba(0,255,255,.8), rgba(0,255,255,0) 60%),
+        linear-gradient(240deg, rgba(0,0,255,.8), rgba(0,0,255,0) 60%),
+        linear-gradient(300deg, rgba(255,0,255,.8), rgba(255,0,255,0) 60%),
+        linear-gradient(360deg, rgba(255,0,0,.8), rgba(255,0,0,0) 60%);
+    animation: rotator 1s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotator {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.input-max-files {
+    background: var(--shadow);
+    border: none;
+    color: var(--color);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 4rem;
+    margin-right: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.max-files-btn {
+    padding: 0.3rem 1rem;
+    background: var(--element-color);
+    border-radius: 15px;
+    margin: 0 1rem;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-btn {
+    margin: 0 1rem;
+    padding: calc(0.1rem + 4px) calc(1.5rem + 4px);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.theme-btn-clair,
+.theme-btn-sombre,
+.theme-btn-auto {
+    border: 2px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.theme-btn-clair {
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.theme-btn-sombre {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.theme-btn-auto {
+    background: var(--background);
+    color: var(--color);
+}
+
+.active-theme {
+    border: 4px solid var(--element-color);
+    transition: border-color 0.3s;
+}
+
+.close-btn {
+    font-size: 0.95rem;
+    width: 200px;
+    text-align: center;
+    border: 4px solid var(--color);
+    border-radius: 15px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    margin-right: 10px; 
+}
+
+.close-btn:last-child {
+    margin-right: 0;
+}
+
+
+.active-close {
+    border: 4px solid var(--element-color);
+    transition: border-color 0.3s;
+}
+
+
+
+/***************************************
+
+Añadido
+
+***************************************/
+
+.nosettings-elements-box {
+    background: #000000c0;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+    display: none;
+}
+
+.nosetting-text {
+    font-size: 0.8rem;
+    display: none;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Administrador de cuentas                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+
+ .tabs-cuenta
+-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: #00000000;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .tabs-cuenta-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(8px); 
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 35%;
+    padding-bottom: 1.5rem;
+    border-radius: 20px;
+    background: #00000000;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .active-cuenta-content {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .cuentas-guardar {
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin: 16% 30%;
+    font: normal normal bold 23px/30px Poppins;
+    border-radius: 18px;
+    background: rgb(83, 83, 83);
+    background: radial-gradient(circle, rgb(255, 255, 255) 0, rgb(71, 71, 71) 2);
+    color: #ffffff;
+    cursor: pointer;
+    border-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .cuentas-guardar:hover {
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #575757;
+  }
+
+  .title-settings {
+    text-align: center;
+    font: normal normal bold 35px Poppins;
+    color: #ffffff;
+    margin: 2% 0;
+  }

@@ -1,0 +1,109 @@
+.login .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: -60%;
+    backdrop-filter: blur(5px);
+}
+
+.login-img {
+    position: absolute;
+    border: none;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.7s;
+}
+
+
+.login-tabs {
+    top: 45%;
+    position: absolute;
+    padding: 20px;
+    background: #24232bc0;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-home,
+.login-offline,
+.login-AZauth,
+.login-AZauth-A2F {
+    display: none;
+}
+
+.login-text {
+    font-size: 1.5rem;
+    margin-bottom: 84px;
+}
+
+.connect,
+.cancel {
+    background: var(--element-color);
+    color: #000000;
+    top: 50%;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(67, 67, 68, 0.7);
+    backdrop-filter: blur(8%);
+    height: 28%;
+    width: 63%;
+    left: 105px;
+    position: absolute;
+}
+
+.connect:hover,
+.cancel:hover {
+    background: #93f8ff; 
+    color: #fff;
+    box-shadow: 0 0 40px rgba(0, 93, 136, 0.7);
+    height: 28%;
+    width: 63%;
+    position: absolute;
+    transition: 0.5s;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(./assets/logomicrosoft.png);
+}
+
+.input-login .email,
+.input-login .password,
+.A2F {
+    color: var(--color);
+    background: none;
+    border: solid 2px var(--element-color);
+    border-radius: 30px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-top: 15px;
+}
+
+
+.input-login .email:hover,
+.input-login .password:hover,
+.A2F:hover {
+    border-color: #a5fffb; 
+}
+
+.logomicro {
+    background-image: url(./assets/logomicrosoft.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position:left;
+    left: 96px;
+    top: 138px;
+    -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
