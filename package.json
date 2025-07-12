@@ -1,7 +1,7 @@
 {
     "name": "blockversestudio",
     "preductname": "BlockVerse Studio",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Launcher para eventos de BlockVerse Studio.",
     "main": "src/app.js",
     "author": {
@@ -50,7 +50,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Mc-Launchers/BlockVerse Studio-client.git",
+        "url": "git+https://github.com/Mc-Launchers/BlockVerse-Studio-Launcher.git",
         "private": true
     }
 }
