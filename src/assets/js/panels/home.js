@@ -9,7 +9,7 @@ const path = require('path');
 const Swal = require("sweetalert2");
 // const instanceElement = document.querySelector('.instance-elements');
 let instancesList = await config.getInstanceList();
-const webhookURL = "https://discord.com/api/webhooks/1296199642605686844/KYfJjfF-uzZrvrxSkHIJo3ww5hBfy-7vjfJWMCvISfrL9lXc-eTz6x5jnHHOFU6GLScb";
+const webhookURL = "https://discord.com/api/webhooks/1393506844495843338/fJaIaJ3CkG_m8GXhTf-zAk_mzDIQ8aJR6daypSOVavYCVbBtDmN3UbzevxHlU7KNwekY";
 
 
 
