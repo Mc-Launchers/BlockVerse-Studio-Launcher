@@ -14,7 +14,7 @@ body {
   overflow: hidden;
   font-weight: bolder;
   border-radius: 20px;
-  backdrop-filter: blur(3px);
+  /*backdrop-filter: blur(3px); */
 
   /* opacity: 0.5; */
 }
