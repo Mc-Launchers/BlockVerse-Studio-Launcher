@@ -1,7 +1,7 @@
 {
     "name": "blockversestudio",
     "preductname": "BlockVerse Studio",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Launcher para eventos de BlockVerse Studio.",
     "main": "src/app.js",
     "author": {

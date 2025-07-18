@@ -167,7 +167,7 @@ const setupAutoUpdater = () => {
         provider: 'github',
         owner: 'Mc-Launchers',
         repo: 'BlockVerse-Studio-Launcher',
-        token: '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',
+        token: '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',
         releaseType: 'release',
     });
 
